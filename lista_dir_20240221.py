@@ -9,10 +9,8 @@ import os
 import pandas as pd
 
 
-# Caminho INRA: \\pfl-cps-file\INRA
-# Caminho Estratégia: \\pfl-cps-file\Estrategia Regulatoria
-pastas = [r'\\pfl-cps-file\Estrategia Regulatoria\Conformidade',
-          r'\\pfl-cps-file\Estrategia Regulatoria\GOVERNANÇA']
+# Diretório a ser mapeado
+pastas = [r'']
 
 
 # Pasta para guardar os arquivos com mais de 250 caracteres
@@ -35,7 +33,7 @@ for pasta in pastas:
                 
 # Exporta o arquivo
 df_rede = pd.DataFrame(pasta_rede)
-df_rede.to_excel(r'C:\Users\2018459\OneDrive - CPFL Energia S A\Documentos\Projetos\2023\Unificação da Rede\Dados\pasta_rede_conformidade.xlsx',encoding = 'UTF-8', index=False)
+df_rede.to_excel(r'',encoding = 'UTF-8', index=False) #Saida do arquivo
                 
                 
 
